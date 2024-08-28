@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>CyberLearn Dressing Room</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="./../assets/css/style.css" />
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="card">
+          <div class="text-center">
+            <img src="./../assets/images/cybersoft.png" alt="Card image" />
+          </div>
+
+          <div class="card-body">
+            <h4 class="card-title text-center">
+              CyberLearn - Học lập trình trực tuyến - Dự án thử đồ trực tuyến
+              - Virtual Dressing Room
+            </h4>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <ul class="nav nav-pills"></ul>
+
+        <div class="well">
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div class="container">
+              <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" href="#tabTopClothes">Áo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" href="#tabBotClothes">Quần</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" href="#tabShoes">Giày dép</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" href="#tabHandBags">Túi xách</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" href="#tabNecklaces">Dây chuyền</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" href="#tabHairStyle">Kiểu tóc</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" href="#tabBackground">Nền</a>
+                </li>
+              </ul>
+
+              <div class="tab-content2">
+                <div id="tabTopClothes" class="container tab-pane active">
+                  <div class="row" id="topClothes">
+                    <!-- Danh sách áo sẽ được hiển thị tại đây -->
+                  </div>
+                </div>
+                <div id="tabBotClothes" class="container tab-pane fade">
+                  <div class="row" id="botClothes">
+                    <!-- Danh sách quần sẽ được hiển thị tại đây -->
+                  </div>
+                </div>
+                <div id="tabShoes" class="container tab-pane fade">
+                  <div class="row" id="shoes">
+                    <!-- Danh sách giày dép sẽ được hiển thị tại đây -->
+                  </div>
+                </div>
+                <div id="tabHandBags" class="container tab-pane fade">
+                  <div class="row" id="handBags">
+                    <!-- Danh sách túi xách sẽ được hiển thị tại đây -->
+                  </div>
+                </div>
+                <div id="tabNecklaces" class="container tab-pane fade">
+                  <div class="row" id="necklaces">
+                    <!-- Danh sách dây chuyền sẽ được hiển thị tại đây -->
+                  </div>
+                </div>
+                <div id="tabHairStyle" class="container tab-pane fade">
+                  <div class="row" id="hairStyle">
+                    <!-- Danh sách kiểu tóc sẽ được hiển thị tại đây -->
+                  </div>
+                </div>
+                <div id="tabBackground" class="container tab-pane fade">
+                  <div class="row" id="backgrounds">
+                    <!-- Danh sách nền sẽ được hiển thị tại đây -->
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="contain">
+          <div class="body"></div>
+          <div class="model"></div>
+          <div class="hairstyle"></div>
+          <div class="necklace"></div>
+          <div class="bikinitop"></div>
+          <div class="bikinibottom"></div>
+          <div class="handbag"></div>
+          <div class="feet"></div>
+          <div class="background"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="./../models/ListChosen.js"></script>
+  <script src="./../models/ChoseItem.js"></script>
+  <script src="./../utils/callData.js"></script>
+  <script src="./../controllers/main.js"></script>
+</body>
+
+</html>
