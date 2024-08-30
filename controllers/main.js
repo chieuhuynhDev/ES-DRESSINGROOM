@@ -33,7 +33,7 @@ let renderNavPills = (navPills) => {
   });
 };
 
-function renderItems(type) {
+let renderItems = (type) => {
   console.log("🚀 ~ renderItems ~ type:", type);
 
   fetch("../data/Data.json")
@@ -58,9 +58,9 @@ function renderItems(type) {
         container.innerHTML += itemHtml;
       });
     });
-}
+};
 
-function tryOnItem(imgSrc, type) {
+let tryOnItem = (imgSrc, type) => {
   console.log("🚀 ~ tryOnItem ~ imgSrc:", imgSrc, " ~ type:", type);
 
   // Xác định phần tử HTML dựa trên type
@@ -70,4 +70,4 @@ function tryOnItem(imgSrc, type) {
   if (modelPart) {
     modelPart.style.backgroundImage = `url(${imgSrc})`;
   }
-}
+};
