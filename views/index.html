@@ -40,71 +40,19 @@
         <div class="well">
           <!-- Tab panes -->
           <div class="tab-content">
-            <div class="container">
-              <ul class="nav nav-pills">
-                <li class="nav-item">
-                  <a class="nav-link active" data-toggle="pill" href="#tabTopClothes">Áo</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-toggle="pill" href="#tabBotClothes">Quần</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-toggle="pill" href="#tabShoes">Giày dép</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-toggle="pill" href="#tabHandBags">Túi xách</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-toggle="pill" href="#tabNecklaces">Dây chuyền</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-toggle="pill" href="#tabHairStyle">Kiểu tóc</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-toggle="pill" href="#tabBackground">Nền</a>
-                </li>
-              </ul>
+            <div id="nav-pills-container" class="nav nav-pills">
+              <!-- Các nav pills sẽ được thêm vào đây bằng JS -->
+            </div>
 
-              <div class="tab-content2">
-                <div id="tabTopClothes" class="container tab-pane active">
-                  <div class="row" id="topClothes">
-                    <!-- Danh sách áo sẽ được hiển thị tại đây -->
-                  </div>
-                </div>
-                <div id="tabBotClothes" class="container tab-pane fade">
-                  <div class="row" id="botClothes">
-                    <!-- Danh sách quần sẽ được hiển thị tại đây -->
-                  </div>
-                </div>
-                <div id="tabShoes" class="container tab-pane fade">
-                  <div class="row" id="shoes">
-                    <!-- Danh sách giày dép sẽ được hiển thị tại đây -->
-                  </div>
-                </div>
-                <div id="tabHandBags" class="container tab-pane fade">
-                  <div class="row" id="handBags">
-                    <!-- Danh sách túi xách sẽ được hiển thị tại đây -->
-                  </div>
-                </div>
-                <div id="tabNecklaces" class="container tab-pane fade">
-                  <div class="row" id="necklaces">
-                    <!-- Danh sách dây chuyền sẽ được hiển thị tại đây -->
-                  </div>
-                </div>
-                <div id="tabHairStyle" class="container tab-pane fade">
-                  <div class="row" id="hairStyle">
-                    <!-- Danh sách kiểu tóc sẽ được hiển thị tại đây -->
-                  </div>
-                </div>
-                <div id="tabBackground" class="container tab-pane fade">
-                  <div class="row" id="backgrounds">
-                    <!-- Danh sách nền sẽ được hiển thị tại đây -->
-                  </div>
-                </div>
+
+            <div id="tabTopClothes" class="container tab-pane active">
+              <div class="row" id="tab-content-container">
+                <!-- Danh sách áo sẽ được hiển thị tại đây -->
               </div>
 
-
+              <!-- Nội dung của từng tab sẽ được thêm vào đây bằng JS -->
             </div>
+
           </div>
         </div>
       </div>
@@ -113,11 +61,13 @@
           <div class="body"></div>
           <div class="model"></div>
           <div class="hairstyle"></div>
-          <div class="necklace"></div>
+          <div class="necklaces"></div>
+          <div class="topclothes"></div>
+          <div class="botclothes"></div>
           <div class="bikinitop"></div>
           <div class="bikinibottom"></div>
-          <div class="handbag"></div>
-          <div class="feet"></div>
+          <div class="handbags"></div>
+          <div class="shoes"></div>
           <div class="background"></div>
         </div>
       </div>
@@ -134,6 +84,7 @@
   <script src="./../models/ChoseItem.js"></script>
   <script src="./../utils/callData.js"></script>
   <script src="./../controllers/main.js"></script>
+
 </body>
 
 </html>
